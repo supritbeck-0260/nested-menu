@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { useState } from 'react/cjs/react.development';
+import { randomColorGenerator } from '../../util/randomColorGenerator';
 import './sidebar-nav.css';
 let width = 300;
 export default function SideBarNav({data}) {
@@ -12,7 +13,7 @@ export default function SideBarNav({data}) {
            return [...prev]
         })
     }
-    const randomColor = useMemo(()=>'#' + Math.random().toString(16).substr(-6),[]);
+    const randomColor = useMemo(randomColorGenerator,[]);
     width = useMemo(()=>width-10,[])
   return(
       <>
