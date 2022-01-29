@@ -1,0 +1,21 @@
+.side-bar{
+    position: relative;
+    background: lightblue;
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-end;
+}
+.side-bar .label{
+    padding: 6px;
+    cursor: pointer;
+    /* background: lightcoral; */
+    border-radius: 5px;
+    margin: 5px;
+
+}
+.sub-manu .label{
+    background: lightgoldenrodyellow !important;
+}
